@@ -2,6 +2,14 @@ package test1;
 import java.util.Scanner;
 
 public class Main {
+    /**
+     * 两个正整数序列A[m],B[n]，都是从小到大排好序了
+     * 1. 如果存在 A[i] < B[j]   ( 0<=i<=m, 0<=j<=n)
+     * 2. R <= B[j]-A[i]
+     * 同时满足 1和2，只需要输出 A[i] B[j]  只需要输出A[i]对应的最小的B[j]
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int m = sc.nextInt();
@@ -14,21 +22,10 @@ public class Main {
         }
         for(int i=0;i<n;i++){
             B[i] = sc.nextInt();
-        }
-
-        // A全在B的右边
-        if(A[0]>B[n-1] || A[0] - B[n-1] > R){
-            //System.out.println("");
-            return;
-        }else{
-            for(int i=0;i<m;i++){
-                if(A[i]>=B[0]-R){
-                    for(int j=0;j<n;j++){
-                        if(A[i]<=B[j] && B[j]-A[i] <= R){
-                            System.out.println(A[i]+" "+B[j]);
-                            break;
-                        }
-                    }
+            for(int j=0;j<m;j++){
+                if(A[j]<B[i] && B[i]-A[j] <= R){
+                    System.out.println(A[j]+" "+B[i]);
+                    break;
                 }
             }
         }

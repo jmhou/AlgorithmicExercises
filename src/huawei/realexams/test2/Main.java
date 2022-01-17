@@ -5,9 +5,10 @@ import java.util.Arrays;
 
 public class Main {
     /**
-     *  前缀模糊匹配
-     *  匹配上了就输出，
-     *  匹配不上就返回前缀
+     *     前缀模糊匹配
+     *     匹配上了就输出，
+     *     匹配不上就返回前缀
+     * @param args
      */
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
