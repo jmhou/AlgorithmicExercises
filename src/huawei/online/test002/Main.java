@@ -2,7 +2,7 @@ package test002;
 
 import java.util.Scanner;
 
-public class FindTimes {
+public class Main {
     /**
      * HJ2 计算某字符出现次数
      * 描述

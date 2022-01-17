@@ -3,7 +3,7 @@ package test003;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class RandomSearch {
+public class Main {
     /**
      * HJ3 明明的随机数
      * 输入：有多组

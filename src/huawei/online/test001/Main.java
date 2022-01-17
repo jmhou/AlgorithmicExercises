@@ -2,7 +2,7 @@ package test001;
 
 import java.util.Scanner;
 
-public class LastWordLength {
+public class Main {
     /**
      * HJ1 字符串最后一个单词的长度
      * 描述
